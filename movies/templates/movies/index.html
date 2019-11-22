@@ -1,0 +1,19 @@
+{% block title %}Movies{% endblock title %}
+
+{% block container %}
+<h1>Movies</h1>
+<hr>
+
+{% for movie in movies %}
+  <div>
+    <h2>{{ movie.title }}</h2>
+    <div>
+    {% for genre in genres %}
+      <span>#{{ genre.type }} </span>
+    {% endfor %}
+    </div>
+    <p>{{ movie.description }}</p>
+  </div>
+{% endfor %}
+
+{% endblock container %}
