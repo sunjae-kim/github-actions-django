@@ -1,0 +1,13 @@
+name: update-movies-curl-test
+
+on:
+  schedule:
+    - cron: '5 * * * *'
+        
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - run: curl https://dog.ceo/api/breeds/image/random
