@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: curl http://github-actions-test.jvnsgh2u35.ap-northeast-2.elasticbeanstalk.com/update-db/
+    - run: curl http://github-actions-test.jvnsgh2u35.ap-northeast-2.elasticbeanstalk.com/movies/update-db/
