@@ -1,9 +1,9 @@
 # .github/workflows/main.yml
-name: update-movies-database
+name: update-movies-database/weekly
 
 on:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '0 0 * * 0'
         
 jobs:
   build:
