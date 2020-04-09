@@ -1,23 +1,23 @@
-# .github/workflows/main.yml
-name: update-movies-database/weekly
+# # .github/workflows/main.yml
+# name: update-movies-database/weekly
 
-on:
-  schedule:
-    - cron: '0 0 * * 0'
+# on:
+#   schedule:
+#     - cron: '0 0 * * 0'
         
-jobs:
-  build:
+# jobs:
+#   build:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-    - uses: actions/checkout@master
-    - uses: actions/setup-python@v1
-      with:
-        python-version: '3.x' # Version range or exact version of a Python version to use, using semvers version range syntax.
-        architecture: 'x64' # (x64 or x86)
-    - name: Install requests
-      run: |
-        python -m pip install --upgrade pip
-        pip install requests
-    - run: python actions/update.py
+#     steps:
+#     - uses: actions/checkout@master
+#     - uses: actions/setup-python@v1
+#       with:
+#         python-version: '3.x' # Version range or exact version of a Python version to use, using semvers version range syntax.
+#         architecture: 'x64' # (x64 or x86)
+#     - name: Install requests
+#       run: |
+#         python -m pip install --upgrade pip
+#         pip install requests
+#     - run: python actions/update.py
